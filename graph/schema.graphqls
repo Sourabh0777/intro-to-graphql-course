@@ -16,4 +16,16 @@ type Mutation {
   toggleTodo(id: ID!): Todo
 }
 
-
+type Todo {
+  id: ID!
+  text: String!
+  done: Boolean!
+  createdAt: String!
+}
+type NewTodo {
+  text: String!
+}
+type UpdateTodo {
+  text: String!
+  done: Boolean!
+}
