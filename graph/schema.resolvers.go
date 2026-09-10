@@ -13,13 +13,38 @@ import (
 )
 
 // CreateTodo is the resolver for the createTodo field.
-func (r *mutationResolver) CreateTodo(ctx context.Context, input model.NewTodo) (*model.Todo, error) {
+func (r *mutationResolver) CreateTodo(ctx context.Context, input *model.NewTodo) (*model.Todo, error) {
 	panic(fmt.Errorf("not implemented: CreateTodo - createTodo"))
+}
+
+// UpdateTodo is the resolver for the updateTodo field.
+func (r *mutationResolver) UpdateTodo(ctx context.Context, id string, input model.UpdateTodo) (*model.Todo, error) {
+	panic(fmt.Errorf("not implemented: UpdateTodo - updateTodo"))
+}
+
+// DeleteTodo is the resolver for the deleteTodo field.
+func (r *mutationResolver) DeleteTodo(ctx context.Context, id string) (bool, error) {
+	panic(fmt.Errorf("not implemented: DeleteTodo - deleteTodo"))
+}
+
+// ToggleTodo is the resolver for the toggleTodo field.
+func (r *mutationResolver) ToggleTodo(ctx context.Context, id string) (*model.Todo, error) {
+	panic(fmt.Errorf("not implemented: ToggleTodo - toggleTodo"))
 }
 
 // Todos is the resolver for the todos field.
 func (r *queryResolver) Todos(ctx context.Context) ([]*model.Todo, error) {
 	panic(fmt.Errorf("not implemented: Todos - todos"))
+}
+
+// Todo is the resolver for the todo field.
+func (r *queryResolver) Todo(ctx context.Context, id string) (*model.Todo, error) {
+	panic(fmt.Errorf("not implemented: Todo - todo"))
+}
+
+// TodoByStatus is the resolver for the todoByStatus field.
+func (r *queryResolver) TodoByStatus(ctx context.Context, done bool) ([]*model.Todo, error) {
+	panic(fmt.Errorf("not implemented: TodoByStatus - todoByStatus"))
 }
 
 // Mutation returns MutationResolver implementation.

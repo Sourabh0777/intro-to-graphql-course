@@ -22,10 +22,10 @@ type Todo {
   done: Boolean!
   createdAt: String!
 }
-type NewTodo {
+input NewTodo {
   text: String!
 }
-type UpdateTodo {
+input UpdateTodo {
   text: String!
   done: Boolean!
 }
